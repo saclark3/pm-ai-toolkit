@@ -1,0 +1,127 @@
+# Feature Summary Creator
+
+## When to Use
+Use this prompt when you have a rough idea and supporting notes and need to produce a tight, structured feature summary for product leadership and UX. It is designed to impose consistent structure on early-stage thinking — eliminating the blank page problem and ensuring every summary hits the same quality bar before it reaches an audience.
+
+**Best used when** you have enough of an idea to describe the problem and have at least some directional notes. The prompt will surface solution options for you to choose from before finalizing, so you do not need to have a solution locked in before starting.
+
+**Target output length:** One to one and a half pages. If the output runs longer, trim — brevity is a signal of clarity.
+
+---
+
+## The Prompt
+
+You are a senior product manager helping to transform a rough idea and supporting notes into a tight, structured feature summary for product leadership and UX. The output should be no longer than one to one and a half pages — every section should be concise, direct, and free of filler.
+
+**Before writing, work through these framing questions with me:**
+
+1. What is the feature or idea being summarized — describe it in a sentence or two
+2. What problem are we solving and for whom?
+3. What notes, context, or supporting information do you have — paste anything relevant
+4. Do you have a sense of how this connects to current product or company strategy?
+5. Who are the primary users this feature serves?
+
+---
+
+**Once framing is complete, produce the following:**
+
+**1. Problem Statement**
+One to two sentences. State the user problem clearly and specifically — no throat-clearing, no broad context setting. Include who is affected and what the consequence of the problem is today.
+
+**2. Key User Personas**
+List the 2–3 primary user types this feature serves. For each, include one sentence on why this problem matters to them specifically.
+
+**3. Solution Hypotheses**
+Surface 3 distinct approaches to solving the problem. For each hypothesis:
+- State the approach in one sentence
+- Note the primary advantage
+- Note the primary tradeoff or risk
+
+Do not recommend one — present all three for the PM to select from before the summary is finalized.
+
+**4. Strategic Alignment**
+Two to three sentences connecting this feature to current product or company strategy. Be specific — reference actual priorities, OKRs, or strategic bets where known. If none are provided, flag this as a gap to fill before sharing with leadership.
+
+**5. Success Metrics**
+List 3–5 measurable outcomes that would indicate this feature is working. Prioritize user behavior metrics over output metrics. Include at least one leading indicator and one lagging indicator.
+
+---
+
+**Rough Idea and Notes:**
+[PASTE YOUR IDEA AND ANY SUPPORTING NOTES HERE]
+
+---
+
+*After reviewing the three solution hypotheses, reply with the number of your preferred approach and the prompt will finalize the feature summary with your selection incorporated.*
+
+---
+
+## Example Output
+
+**Framing Inputs:**
+- Feature: A personalized product recommendation layer for a baby registry platform
+- Problem: Parents feel overwhelmed by the volume of products available and don't know where to start
+- Notes: Users drop off during the "add items" phase; current recommendations are category-based only; competitors are not doing behavior-driven personalization yet
+- Strategy: Current OKR is increasing registry completion rate by 20% this quarter
+- Primary users: First-time expecting parents, gift-givers shopping from a shared registry
+
+---
+
+**1. Problem Statement**
+
+First-time expecting parents abandon their registry during the item selection phase because product volume is overwhelming and current recommendations lack personalization. The result is incomplete registries that reduce purchase conversion and erode platform trust.
+
+---
+
+**2. Key User Personas**
+
+- **First-time expecting parent** — Unfamiliar with what they actually need, they rely on the platform to guide decisions. Generic category recommendations create more anxiety, not less.
+- **Experienced parent (second+ child)** — Knows what they want but needs efficiency. Irrelevant recommendations waste their time and reduce engagement.
+- **Gift-giver** — Shopping from a shared registry and needs confidence that items are well-chosen and still available. An incomplete or thin registry directly reduces their likelihood to purchase.
+
+---
+
+**3. Solution Hypotheses**
+
+**Option 1 — Behavior-driven recommendation engine**
+Build a recommendation layer that surfaces products based on user browsing behavior, registry completion patterns, and purchase signals from similar users.
+- *Advantage:* Highest potential for relevance and personalization at scale
+- *Tradeoff:* Requires significant data infrastructure investment and cold-start problem for new users
+
+**Option 2 — Guided registry quiz**
+Introduce an onboarding quiz that captures lifestyle, budget, and preference signals upfront and uses responses to pre-populate a starter registry with curated recommendations.
+- *Advantage:* Low technical lift, immediately addresses the overwhelm problem at the start of the journey
+- *Tradeoff:* Static after completion — does not adapt to evolving user behavior or preferences
+
+**Option 3 — Editorial + AI hybrid curation**
+Combine human-curated "best of" lists with an AI layer that personalizes which lists surface for each user based on their profile and behavior.
+- *Advantage:* Balances trust (editorial credibility) with personalization — lower risk than a pure algorithmic approach
+- *Tradeoff:* Editorial list maintenance creates ongoing content ops overhead
+
+---
+
+**4. Strategic Alignment**
+
+This feature directly supports the current OKR to increase registry completion rate by 20% this quarter by addressing the primary drop-off point in the item selection flow. It also advances the longer-term platform bet on personalization as a retention and differentiation lever — an area where no direct competitor has meaningful investment today.
+
+*Note: If there are additional strategic bets or OKRs this should connect to, add them here before sharing with leadership.*
+
+---
+
+**5. Success Metrics**
+
+- **Registry completion rate** (lagging) — percentage of started registries that reach a defined completion threshold (e.g. 20+ items added)
+- **Recommendation click-through rate** (leading) — percentage of surfaced recommendations that result in an item being added to a registry
+- **Time to first item added** (leading) — reduction in time between registry creation and first item addition as a signal of reduced overwhelm
+- **Return visit rate within 7 days** (leading) — percentage of users who return to edit or add to their registry within a week of creation
+- **Purchase conversion from registry** (lagging) — percentage of registry items that result in a gift purchase, as a downstream signal of registry quality
+
+---
+
+## What to Watch Out For
+
+- **Vague problem statements produce vague summaries.** If the problem statement in the output feels generic, push harder on who specifically is affected and what the measurable consequence is today.
+- **Three hypotheses are a starting point, not a menu.** The prompt surfaces options to help you choose — but the choice should be informed by engineering input, strategic fit, and user evidence, not just what reads well on paper.
+- **Strategic alignment gaps are common and important.** If the prompt flags that strategic alignment is unclear, do not skip it. Leadership will ask. Fill it before sharing.
+- **Success metrics need an owner.** The prompt will suggest metrics but will not know what your team can actually instrument. Review each metric against your current analytics capabilities before committing to them.
+- **Length creep is a quality signal.** If the output exceeds a page and a half, the idea is probably not scoped tightly enough yet. Use the length limit as a forcing function — not a formatting preference.
