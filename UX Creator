@@ -1,0 +1,82 @@
+# Requirements → Figma Make Prompt Builder
+
+## When to Use
+Use this prompt when you have a feature summary — with or without supplemental notes — and need to generate a structured prompt to paste directly into Figma Make. It is designed to sit between your feature definition work and your design workflow, eliminating the translation step between product thinking and AI-generated design output.
+
+**Best used when** the feature is scoped enough to have a clear user action and at least a rough sense of the screens or states involved. If the feature is still being defined, finalize the summary first.
+
+---
+
+## The Prompt
+
+You are a product design prompt engineer. Your job is to transform a feature summary and supplemental notes into a precise, structured prompt ready to paste directly into Figma Make.
+
+**Read the feature summary and notes below, then produce a Figma Make prompt that includes:**
+
+1. **Feature context** — one sentence describing what is being built and why
+2. **Primary user action** — the core thing the user needs to accomplish in this flow
+3. **Key screens or states** — list the distinct screens, steps, or interaction states that need to be represented
+4. **Content and data requirements** — what real or representative content needs to appear (labels, inputs, data fields, CTAs)
+5. **Edge cases to represent** — empty states, error states, or loading states that should be included
+6. **Fidelity instruction** — based on the mode selected below, include an explicit fidelity directive in the prompt
+
+**Before generating, apply the fidelity mode specified here:**
+
+- **WIREFRAME MODE** — instruct Figma Make to produce low-fidelity grayscale wireframes with placeholder content, no styling, focused on layout and flow only
+- **DETAILED MODE** — instruct Figma Make to produce high-fidelity designs with component suggestions, interaction states, annotations, and realistic content
+
+**Fidelity Mode:** [WIREFRAME or DETAILED]
+
+---
+
+**Feature Summary:**
+[PASTE FEATURE SUMMARY HERE]
+
+**Supplemental Notes:**
+[PASTE ANY ADDITIONAL NOTES HERE — or write "None"]
+
+---
+
+## Example Output
+
+**Input — Feature Summary:**
+> Users need a way to save and revisit products they are interested in but not ready to purchase. The feature allows users to add items to a personal wishlist from any product page, view the wishlist in their account, and share it with others via a link.
+
+**Input — Supplemental Notes:**
+> Sharing should be optional. The wishlist should support at least 50 items. Mobile is the primary surface.
+
+**Input — Fidelity Mode:** WIREFRAME
+
+---
+
+**Generated Figma Make Prompt:**
+
+Design a low-fidelity wireframe for a wishlist feature on a mobile app. Use grayscale placeholder styling with no color or branding. Focus on layout and flow only.
+
+The feature allows users to save products they are interested in but not ready to purchase. The primary user action is adding an item to a wishlist from a product page and later viewing or sharing that wishlist.
+
+Include the following screens and states:
+- Product page with a visible "Save to Wishlist" action
+- Confirmation state after an item is saved
+- Wishlist view within the user's account, showing saved items in a list or grid layout
+- Empty state for a wishlist with no saved items
+- Share wishlist screen with a generated link and optional copy/share actions
+- Error state if the wishlist fails to load
+
+Content to represent:
+- Product name, thumbnail, price, and save/remove CTA on each wishlist item
+- Item count indicator on the wishlist view
+- Share link field with a copy button
+- Placeholder text for empty and error states
+
+Keep all screens mobile-optimized. Do not apply visual styling, iconography, or color beyond grayscale layout structure.
+
+---
+
+## What to Watch Out For
+
+- **Thin supplemental notes produce thin prompts.** The more specific your notes (primary surface, key constraints, known edge cases), the more precise the Figma Make output will be. If the generated prompt feels generic, add more context to your notes before re-running.
+- **Fidelity mode must be explicitly set.** Do not leave it blank — Figma Make will default to its own interpretation which may not match your intent.
+- **Variable context is intentional.** Platform, user type, and design system details are deliberately excluded from this prompt structure because they vary by project. Add them manually to the generated Figma Make prompt before pasting if relevant.
+- **This produces a prompt, not a design.** The output of this process is what you paste into Figma Make — not the final design itself. Review the generated prompt for accuracy before using it.
+- **Edge cases are often underspecified.** If your feature summary does not mention error or empty states, the prompt will generate generic ones. Review and customize before handing off to Figma Make.
