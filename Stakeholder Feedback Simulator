@@ -1,0 +1,89 @@
+# Stakeholder Criticism Simulator
+
+## When to Use
+Use this prompt after a feature summary has passed your own initial review and is one step away from a formal stakeholder meeting. It is designed to surface blindspots, weak reasoning, dependency gaps, and delivery concerns before they emerge in the room.
+
+**Do not use this as a first-pass review.** The feature summary should already be coherent, scoped, and self-reviewed before running it through this prompt.
+
+---
+
+## The Prompt
+
+You are a panel of senior stakeholders reviewing a feature summary proposal before it reaches a formal stakeholder meeting. Your job is to stress-test this proposal the way a real leadership team would — finding blindspots, weak reasoning, dependency gaps, and delivery concerns before they surface in the room.
+
+**Your panel consists of:**
+- **Product Director / VP** — focused on strategic alignment, prioritization tradeoffs, and whether this is the right problem to solve right now
+- **Technical Program Manager** — focused on dependencies, delivery risk, technical feasibility, and sequencing
+- **Marketing Senior Leadership** — focused on market timing, positioning clarity, and go-to-market readiness
+- **Product Marketing Senior Leadership** — focused on messaging clarity, audience definition, and whether the value prop is sharp enough to land
+
+**Review the feature summary below and produce the following:**
+
+**1. Scored Rubric (1–5 per dimension)**
+- Strategic Alignment — does this clearly connect to company or product priorities?
+- Clarity of the Ask — is the problem, solution, and desired outcome unambiguous?
+- Technical & Delivery Feasibility — are dependencies identified and risks acknowledged?
+- Market & GTM Readiness — is there a clear sense of timing, audience, and how this gets positioned?
+- Stakeholder Readiness — is this proposal ready to withstand a leadership review without major gaps?
+
+**2. Bulleted Criticisms by Stakeholder Persona**
+For each panel member, list the specific criticisms they would raise. Be direct and pointed — do not soften feedback.
+
+**3. Questions to Address Before the Meeting**
+For each criticism, include one actionable question the PM should answer to resolve or preempt it.
+
+---
+
+**Feature Summary:**
+[PASTE YOUR FEATURE SUMMARY HERE]
+
+---
+
+## Example Output
+
+**Scored Rubric**
+
+| Dimension | Score (1–5) |
+|---|---|
+| Strategic Alignment | 3 |
+| Clarity of the Ask | 4 |
+| Technical & Delivery Feasibility | 2 |
+| Market & GTM Readiness | 3 |
+| Stakeholder Readiness | 3 |
+
+---
+
+**Criticisms by Stakeholder Persona**
+
+**Product Director / VP**
+- The strategic rationale leans on user demand but does not connect to a current OKR or roadmap priority
+- No mention of what gets deprioritized to make room for this
+
+> *Question to address: Which Q[X] OKR does this move, and what is being traded off to take this on?*
+
+**Technical Program Manager**
+- No dependency mapping — it is unclear whether this requires platform changes, third-party integrations, or shared eng resources
+- Delivery timeline is stated without estimation basis
+
+> *Question to address: What are the top 3 technical dependencies and have engineering leads been consulted on feasibility?*
+
+**Marketing Senior Leadership**
+- Market timing rationale is absent — there is no reference to competitive context or a launch window
+- Unclear whether this is a net-new capability or an improvement to an existing one, which affects how it gets positioned
+
+> *Question to address: Is there a competitive or seasonal reason to launch this now versus next quarter?*
+
+**Product Marketing Senior Leadership**
+- The value prop is functional but not differentiated — it describes what the feature does, not why users should care
+- Target audience is broadly defined; no mention of primary versus secondary user segments
+
+> *Question to address: What is the one-sentence value prop a user would repeat to a friend, and who is the primary user this is built for?*
+
+---
+
+## What to Watch Out For
+
+- **Overly generous scores.** If the model returns mostly 4s and 5s, your summary may be too vague for it to identify real gaps. Add more specificity and re-run.
+- **Generic criticisms.** If feedback feels surface-level, add a brief company or product context line above the feature summary so the model can ground its critique.
+- **Missing stakeholder voices.** The prompt covers four personas. If a key stakeholder in your org is absent (e.g. legal, finance, data), add them explicitly to the panel before running.
+- **Treating this as final.** This prompt identifies gaps — it does not resolve them. Use the output as a preparation checklist, not a sign-off.
