@@ -1,0 +1,147 @@
+# Competitor Positioning Review
+
+## When to Use
+Use this prompt when you need to analyze a competitor across multiple sources and translate that analysis into sharp positioning insights for your own product. It is designed to sit between raw competitive research and stakeholder-ready strategy work — eliminating the gap between "I've read about this competitor" and "I know what to do about it."
+
+**Best used when** you have at least 2–3 sources of competitor information (website, feature announcements, app store listings, reviews, press) and a clear sense of the user problem you are competing on. The prompt will help validate and sharpen that problem framing before diving into analysis.
+
+---
+
+## The Prompt
+
+You are a senior product strategist conducting a competitive analysis. Your job is to analyze competitor information across multiple sources, apply two strategic frameworks, and surface insights that sharpen product positioning and strengthen stakeholder presentations.
+
+**Before analyzing, work through these framing questions with me:**
+
+1. Who is the competitor being analyzed?
+2. What is the user problem we believe this competitor is addressing — state it in one sentence
+3. What sources are being provided? (website, feature announcements, app store listings, reviews, press, other)
+4. What is our product or feature that competes in this space?
+5. Are there any known areas where we believe we are stronger or more exposed?
+
+---
+
+**Once framing is complete, produce the following:**
+
+**1. User Problem Validation**
+- Restate the user problem as provided
+- Based on the competitor evidence, validate whether this framing is accurate
+- If the evidence suggests the problem is framed too narrowly or incorrectly, challenge it and offer a sharper reframe
+
+**2. SWOT Analysis**
+Analyze the competitor across four dimensions:
+- **Strengths** — what they do well based on the evidence
+- **Weaknesses** — gaps, complaints, or areas of underinvestment visible in the sources
+- **Opportunities** — market or user needs they are not fully addressing
+- **Threats** — where their trajectory or momentum poses a risk to our positioning
+
+**3. Porter's Five Forces**
+Analyze the competitive landscape through:
+- **Competitive Rivalry** — how intensely are they competing in this space and how do they differentiate?
+- **Threat of New Entrants** — how defensible is their position?
+- **Bargaining Power of Buyers** — how much leverage do users have and how does this competitor respond to it?
+- **Bargaining Power of Suppliers** — any dependencies or partnerships that affect their delivery?
+- **Threat of Substitutes** — what alternatives exist and how is this competitor positioned against them?
+
+**4. Synthesis — Positioning Implications**
+Combine the SWOT and Porter's analysis into 3–5 sharp positioning implications. Each implication should answer: *"Given what we know about this competitor, what should we do differently, double down on, or prepare to defend?"*
+
+**5. Stakeholder-Ready Summary**
+Provide a 3–5 bullet executive summary suitable for a stakeholder presentation. Direct, no hedging, insight-led.
+
+---
+
+**Competitor Sources:**
+[PASTE OR DESCRIBE SOURCES HERE]
+
+---
+
+## Example Output
+
+**Framing Inputs:**
+- Competitor: Babylist
+- User Problem: Expecting parents struggle to consolidate registry items from multiple retailers into one shareable list
+- Sources: Babylist.com, App Store reviews, TechCrunch feature announcement
+- Our product: [Competing registry and discovery feature]
+- Known exposure: Our cross-retailer integration is limited compared to Babylist
+
+---
+
+**1. User Problem Validation**
+
+*Stated problem:* Expecting parents struggle to consolidate registry items from multiple retailers into one shareable list.
+
+*Validation:* The evidence supports this framing. App Store reviews consistently cite cross-retailer flexibility as Babylist's primary value driver. However, the framing may be too narrow — evidence suggests the deeper problem is that parents feel overwhelmed by the entire registry process, not just consolidation. A sharper reframe: *Expecting parents lack a trusted, low-effort way to research, curate, and share baby products across a fragmented retail landscape.*
+
+---
+
+**2. SWOT Analysis**
+
+**Strengths**
+- Universal registry model allows items from any retailer, removing a major friction point
+- Strong brand trust among millennial and Gen Z parents
+- Content and editorial layer (guides, reviews) creates pre-purchase confidence
+
+**Weaknesses**
+- App Store reviews cite checkout friction when purchasing from third-party retailers
+- Limited personalization — recommendations are category-based, not behavior-driven
+- Customer support response times flagged repeatedly in 1–2 star reviews
+
+**Opportunities**
+- Post-purchase experience (tracking, returns, thank-you notes) is underdeveloped
+- Group gifting and co-purchasing workflows are clunky
+- Personalization and AI-driven recommendation is an unaddressed whitespace
+
+**Threats**
+- Amazon's registry product has distribution scale that Babylist cannot match
+- Increased retailer investment in native registry tools (Target, Buy Buy Baby) reduces switching incentive
+- Growing TikTok-driven product discovery reduces reliance on curated registry platforms
+
+---
+
+**3. Porter's Five Forces**
+
+**Competitive Rivalry — High**
+Babylist competes against retailer-native registries (Amazon, Target) and discovery platforms (The Bump, Knix). Their differentiation is neutrality and content trust, but rivalry is intensifying as retailers invest in their own registry experiences.
+
+**Threat of New Entrants — Moderate**
+The universal registry model is replicable, but Babylist's brand equity and content library create meaningful switching costs. An AI-native entrant with superior personalization could disrupt without needing scale.
+
+**Bargaining Power of Buyers — High**
+Parents face zero switching costs between registry platforms and often maintain registries on multiple platforms simultaneously. Retention is driven by habit and social sharing, not lock-in.
+
+**Bargaining Power of Suppliers — Low**
+Babylist's retailer relationships are non-exclusive. Retailers participate because it drives traffic, not because Babylist has leverage over them.
+
+**Threat of Substitutes — Moderate to High**
+Spreadsheets, Amazon wishlists, and social sharing (TikTok, Instagram) all serve as informal substitutes. The threat increases as younger parents rely more on peer recommendations than curated platforms.
+
+---
+
+**4. Positioning Implications**
+
+1. **Invest in post-purchase experience.** Babylist's weakness after the registry is created is an open door — thank-you tracking, arrival confirmations, and return workflows are unaddressed.
+2. **Lead with personalization.** Babylist's recommendation layer is category-level. Behavior-driven, AI-powered recommendations are a credible differentiator we can move on first.
+3. **Reduce checkout friction as a trust signal.** Buyers abandon at third-party checkout. A smoother purchase path — even marginally — is a retention lever.
+4. **Target the overwhelm, not just the consolidation.** Messaging that addresses the emotional weight of registry building will resonate more than feature-level comparisons.
+5. **Prepare to defend against AI-native entrants.** The personalization gap is the most exploitable weakness in Babylist's model. We should assume a well-funded competitor will move on this within 18 months.
+
+---
+
+**5. Stakeholder-Ready Summary**
+
+- Babylist's core strength is retailer neutrality and content trust — but their product experience deteriorates sharply after the registry is created
+- The real user problem is overwhelm across the full registry journey, not just item consolidation — our positioning should reflect this
+- Personalization is the biggest unaddressed whitespace and our clearest path to differentiation
+- Buyer switching costs are near zero — retention strategy must prioritize habit formation and social sharing loops, not feature lock-in
+- An AI-native competitor entering this space is a credible 18-month threat; moving on personalization now is both offensive and defensive
+
+---
+
+## What to Watch Out For
+
+- **Thin sources produce surface-level analysis.** App store reviews and a homepage alone will not generate useful SWOT or Porter's insights. Aim for at least 3 distinct source types before running this prompt.
+- **The problem reframe may sting.** If the prompt challenges your user problem framing, take it seriously — that tension is often where the most useful strategic insight lives.
+- **Porter's Five Forces works best at the market level.** If you are analyzing a single feature rather than a full product, some forces (supplier power, new entrants) may feel thin. Note this in your framing and focus weight on rivalry and substitutes.
+- **The stakeholder summary is a starting point, not a final draft.** Review it against your audience before using in a presentation — the prompt does not know your internal political context.
+- **Run this per competitor, not across multiple at once.** The prompt is designed for single-competitor depth. For a multi-competitor landscape view, run it separately for each and synthesize manually.
